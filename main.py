@@ -14,7 +14,7 @@ def main():
         current_rating = updated_rating
 
 
-schedule.every(30).seconds.do(main)
+schedule.every(30).minutes.do(main)
 
 while True:
     schedule.run_pending()
